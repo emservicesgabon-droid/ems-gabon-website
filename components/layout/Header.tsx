@@ -180,8 +180,8 @@ export function Header() {
 
               <Link
                 href={`/${locale}/devis`}
-                className="hidden sm:inline-flex items-center gap-2 text-primary-900 text-sm font-bold px-4 py-2 rounded-lg hover:brightness-110 transition-all"
-                style={{ background: "#f5a623", boxShadow: "0 0 12px rgba(245,166,35,0.45)" }}
+                className="hidden sm:inline-flex items-center gap-2 text-[#0a1628] text-sm font-bold px-4 py-2 rounded-lg hover:brightness-110 transition-all"
+                style={{ background: "#d4a94b", boxShadow: "0 0 12px rgba(212,169,75,0.45)" }}
               >
                 {t("common.cta_quote")}
               </Link>

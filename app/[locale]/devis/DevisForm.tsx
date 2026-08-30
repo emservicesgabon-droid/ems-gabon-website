@@ -112,7 +112,7 @@ export function DevisForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="w-full flex items-center justify-center gap-2 bg-primary-700 text-white font-semibold text-sm py-3.5 rounded-xl hover:bg-primary-800 disabled:opacity-50 transition-colors"
+        className="w-full flex items-center justify-center gap-2 bg-[#d4a94b] text-[#0a1628] font-bold text-sm py-3.5 rounded-xl hover:brightness-110 disabled:opacity-50 transition-all shadow-lg shadow-[#d4a94b]/25"
       >
         {isPending ? (
           <>

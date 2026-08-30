@@ -29,8 +29,8 @@ export default function NotFound() {
         <div className="flex flex-wrap gap-3 justify-center">
           <Link
             href="/fr"
-            className="inline-flex items-center gap-2 text-primary-900 text-sm font-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
-            style={{ background: "#f5a623", boxShadow: "0 0 12px rgba(245,166,35,0.4)" }}
+            className="inline-flex items-center gap-2 text-[#0a1628] text-sm font-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
+            style={{ background: "#d4a94b", boxShadow: "0 0 12px rgba(212,169,75,0.4)" }}
           >
             Retour à l&apos;accueil
           </Link>

@@ -111,7 +111,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="w-full flex items-center justify-center gap-2 bg-primary-700 text-white font-semibold text-sm py-3 rounded-lg hover:bg-primary-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+        className="w-full flex items-center justify-center gap-2 bg-[#d4a94b] text-[#0a1628] font-bold text-sm py-3 rounded-lg hover:brightness-110 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg shadow-[#d4a94b]/25"
       >
         {isPending ? (
           <>

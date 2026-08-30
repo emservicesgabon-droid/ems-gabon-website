@@ -25,7 +25,7 @@ export function SectionHeading({
     <div className={`flex flex-col gap-3 ${alignClass} ${className}`}>
       {accent && (
         <span
-          className="inline-block h-1 w-12 rounded-full bg-accent-neon"
+          className="inline-block h-1 w-12 rounded-full bg-gradient-to-r from-[#00d4ff] to-[#d4a94b]"
           aria-hidden="true"
         />
       )}

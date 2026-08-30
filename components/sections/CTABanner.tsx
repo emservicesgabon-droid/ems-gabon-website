@@ -28,7 +28,7 @@ export function CTABanner({
       {/* Decorative */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white/5" />
-        <div className="absolute -bottom-10 -left-10 w-60 h-60 rounded-full bg-accent-neon/10" />
+        <div className="absolute -bottom-10 -left-10 w-60 h-60 rounded-full bg-[#d4a94b]/10" />
       </div>
 
       <Container className="relative text-center">
@@ -41,7 +41,7 @@ export function CTABanner({
         <div className="flex flex-wrap gap-3 justify-center">
           <Link
             href={`/${locale}/devis`}
-            className="inline-flex items-center gap-2 bg-accent-neon text-primary-900 font-bold text-sm px-6 py-3 rounded-lg hover:brightness-110 transition-all shadow-lg shadow-accent-neon/20"
+            className="inline-flex items-center gap-2 bg-[#d4a94b] text-[#0a1628] font-bold text-sm px-6 py-3 rounded-lg hover:brightness-110 transition-all shadow-lg shadow-[#d4a94b]/25"
           >
             {t("common.cta_quote")}
             <ArrowRight size={16} />

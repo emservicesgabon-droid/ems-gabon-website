@@ -173,7 +173,7 @@ export function ServicePageLayout({
             <div className="flex gap-3 flex-shrink-0">
               <Link
                 href={`/${locale}/devis`}
-                className="inline-flex items-center gap-2 bg-accent-neon text-primary-900 text-sm font-bold px-5 py-2.5 rounded-lg hover:brightness-110 transition-all shadow-sm shadow-accent-neon/20"
+                className="inline-flex items-center gap-2 bg-[#d4a94b] text-[#0a1628] text-sm font-bold px-5 py-2.5 rounded-lg hover:brightness-110 transition-all shadow-sm shadow-[#d4a94b]/25"
               >
                 {t("common.cta_quote")} <ArrowRight size={14} />
               </Link>
