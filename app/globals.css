@@ -114,10 +114,11 @@ body {
     0 0 20px rgba(56, 216, 255, 0.35);
 }
 
-/* === Logo-teal hero background === */
+/* === Hero background — identité dark premium #0a1628 === */
 .hero-logo-bg {
-  background: radial-gradient(ellipse 80% 60% at 75% 30%, rgba(245, 166, 35, 0.18) 0%, transparent 60%),
-              linear-gradient(135deg, #071820 0%, #0d2d3a 35%, #122f3e 60%, #1a3d4a 100%);
+  background: radial-gradient(ellipse 55% 60% at 15% 20%, rgba(0, 212, 255, 0.14) 0%, transparent 60%),
+              radial-gradient(ellipse 55% 60% at 85% 25%, rgba(212, 169, 75, 0.16) 0%, transparent 60%),
+              linear-gradient(160deg, #0a1628 0%, #0b1c2e 50%, #0d2536 100%);
 }
 
 /* === Orange glow blob (logo halo) === */

@@ -48,7 +48,7 @@ export function ServicePageLayout({
         <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div
             className="absolute -left-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full"
-            style={{ background: "radial-gradient(circle, rgba(26,80,100,0.70) 0%, rgba(13,45,58,0.40) 50%, transparent 70%)" }}
+            style={{ background: "radial-gradient(circle, rgba(0,212,255,0.13) 0%, rgba(0,212,255,0.04) 50%, transparent 70%)" }}
           />
           <div className="orange-glow-blob-strong absolute -top-16 right-0 w-[420px] h-[420px] rounded-full" />
           <div

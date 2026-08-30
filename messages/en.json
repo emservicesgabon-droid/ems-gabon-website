@@ -135,6 +135,8 @@
     "server_desc": "Deployment and administration of Windows servers, Active Directory, GPO and Microsoft infrastructure.",
     "security_title": "Security & CCTV",
     "security_desc": "Installation of CCTV cameras, anti-intrusion systems, access control and remote supervision.",
+    "access_title": "Access Control",
+    "access_desc": "Badge readers, biometrics and access management to secure your premises and track entries.",
     "fiber_title": "Fiber Optics",
     "fiber_desc": "Installation and deployment of fiber optic networks for businesses. Testing and certification.",
     "training_title": "IT Training",

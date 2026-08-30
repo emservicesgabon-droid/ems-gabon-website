@@ -23,7 +23,7 @@ export default async function DevisPage({ params }: Props) {
       <section className="hero-logo-bg relative overflow-hidden text-white py-16 sm:py-20">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full"
-            style={{ background: "radial-gradient(circle, rgba(26,80,100,0.70) 0%, rgba(13,45,58,0.40) 50%, transparent 70%)" }} />
+            style={{ background: "radial-gradient(circle, rgba(0,212,255,0.13) 0%, rgba(0,212,255,0.04) 50%, transparent 70%)" }} />
           <div className="orange-glow-blob-strong absolute -top-16 right-0 w-[420px] h-[420px] rounded-full" />
           <div className="absolute -bottom-24 right-1/3 w-[380px] h-[380px] rounded-full"
             style={{ background: "radial-gradient(circle, rgba(56,216,255,0.22) 0%, rgba(56,216,255,0.07) 50%, transparent 70%)" }} />
@@ -44,7 +44,7 @@ export default async function DevisPage({ params }: Props) {
           </div>
         </Container>
         <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none" aria-hidden="true">
-          <svg viewBox="0 0 1200 50" preserveAspectRatio="none" className="w-full h-8 fill-[#f8fafc]">
+          <svg viewBox="0 0 1200 50" preserveAspectRatio="none" className="w-full h-8 fill-[#0a1628]">
             <path d="M0,50 C300,0 900,50 1200,0 L1200,50 Z" />
           </svg>
         </div>
