@@ -9,14 +9,14 @@ interface BadgeProps {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  primary: "bg-primary-100 text-primary-700",
-  success: "bg-accent-green-light text-accent-green",
-  warning: "bg-accent-yellow-light text-amber-700",
-  danger: "bg-red-100 text-red-700",
-  info: "bg-accent-neon-light text-cyan-700",
-  neon: "bg-accent-neon-light text-cyan-700",
-  yellow: "bg-accent-yellow-light text-amber-700",
-  grey: "bg-grey-100 text-grey-700",
+  primary: "bg-primary-500/15 text-primary-300 border border-primary-400/20",
+  success: "bg-accent-green/15 text-green-300 border border-green-400/20",
+  warning: "bg-amber-400/15 text-amber-300 border border-amber-400/20",
+  danger: "bg-red-500/15 text-red-300 border border-red-400/20",
+  info: "bg-[#00d4ff]/15 text-[#7fe7ff] border border-[#00d4ff]/20",
+  neon: "bg-[#00d4ff]/15 text-[#7fe7ff] border border-[#00d4ff]/20",
+  yellow: "bg-amber-400/15 text-amber-300 border border-amber-400/20",
+  grey: "bg-white/10 text-white/70 border border-white/10",
 };
 
 export function Badge({ children, variant = "primary", className = "" }: BadgeProps) {

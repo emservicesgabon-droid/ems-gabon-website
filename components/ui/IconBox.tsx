@@ -12,11 +12,11 @@ interface IconBoxProps {
 }
 
 const variantClasses: Record<IconBoxVariant, string> = {
-  primary: "bg-primary-100 text-primary-700",
-  success: "bg-accent-green-light text-accent-green",
-  neon: "bg-accent-neon-light text-cyan-600",
-  yellow: "bg-accent-yellow-light text-amber-600",
-  grey: "bg-grey-100 text-grey-600",
+  primary: "bg-primary-500/12 text-primary-300 border border-primary-400/15",
+  success: "bg-accent-green/12 text-green-300 border border-green-400/15",
+  neon: "bg-[#00d4ff]/12 text-[#00d4ff] border border-[#00d4ff]/15",
+  yellow: "bg-amber-400/12 text-amber-300 border border-amber-400/15",
+  grey: "bg-white/8 text-white/70 border border-white/10",
 };
 
 const sizeClasses: Record<IconBoxSize, string> = {

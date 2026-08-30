@@ -17,22 +17,23 @@ export function WhyChooseUs() {
   const t = useTranslations();
 
   return (
-    <section className="py-16 sm:py-20 bg-grey-50">
+    <section className="py-16 sm:py-20 bg-[#0b1c2e]">
       <Container>
         <SectionHeading
           title={t("home.why_title")}
           subtitle={t("home.why_subtitle")}
           className="mb-12"
+          light
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map(({ icon: Icon, titleKey, descKey, color }) => (
-            <div key={titleKey} className="flex gap-4 p-5 bg-white rounded-xl border border-border">
+            <div key={titleKey} className="flex gap-4 p-5 bg-white/[0.04] rounded-xl border border-white/10 hover:border-[#00d4ff]/30 transition-colors">
               <IconBox variant={color} size="md" className="flex-shrink-0">
                 <Icon size={20} />
               </IconBox>
               <div>
-                <h3 className="font-semibold text-text-heading mb-1">{t(titleKey)}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{t(descKey)}</p>
+                <h3 className="font-semibold text-white mb-1">{t(titleKey)}</h3>
+                <p className="text-sm text-white/55 leading-relaxed">{t(descKey)}</p>
               </div>
             </div>
           ))}

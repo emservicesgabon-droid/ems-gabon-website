@@ -47,7 +47,7 @@ export function DevisForm() {
       <h2 className="text-xl font-bold text-text-heading mb-6">{t("devis.title")}</h2>
 
       {/* Step 1: Service */}
-      <div className="p-5 bg-grey-50 rounded-xl border border-border">
+      <div className="p-5 bg-white/[0.04] rounded-xl border border-white/10">
         <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wide mb-4">
           1. {t("devis.step1_title")}
         </h3>
@@ -63,7 +63,7 @@ export function DevisForm() {
       </div>
 
       {/* Step 2: Details */}
-      <div className="p-5 bg-grey-50 rounded-xl border border-border space-y-4">
+      <div className="p-5 bg-white/[0.04] rounded-xl border border-white/10 space-y-4">
         <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wide">
           2. {t("devis.step2_title")}
         </h3>
@@ -95,7 +95,7 @@ export function DevisForm() {
       </div>
 
       {/* Step 3: Contact */}
-      <div className="p-5 bg-grey-50 rounded-xl border border-border space-y-4">
+      <div className="p-5 bg-white/[0.04] rounded-xl border border-white/10 space-y-4">
         <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wide">
           3. {t("devis.step3_title")}
         </h3>

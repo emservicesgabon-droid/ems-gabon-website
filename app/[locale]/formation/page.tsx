@@ -43,7 +43,7 @@ function TrainingContent() {
 
     >
       {/* Levels */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-[#0a1628]">
         <Container>
           <h2 className="text-xl font-bold text-text-heading mb-6">{t("training.levels_title")}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
@@ -60,9 +60,9 @@ function TrainingContent() {
           <h2 className="text-xl font-bold text-text-heading mb-4">{t("training.formats_title")}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {formats.map(({ icon: Icon, labelKey }) => (
-              <div key={labelKey} className="flex flex-col items-center gap-2 p-4 bg-grey-50 rounded-xl border border-border text-center">
-                <div className="w-9 h-9 rounded-full bg-primary-100 flex items-center justify-center">
-                  <Icon size={16} className="text-primary-700" />
+              <div key={labelKey} className="flex flex-col items-center gap-2 p-4 bg-white/[0.04] rounded-xl border border-white/10 text-center">
+                <div className="w-9 h-9 rounded-full bg-[#00d4ff]/12 flex items-center justify-center">
+                  <Icon size={16} className="text-[#00d4ff]" />
                 </div>
                 <span className="text-sm font-medium text-text-heading">{t(labelKey)}</span>
               </div>

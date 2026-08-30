@@ -24,10 +24,9 @@ export function Card({
   padding = "md",
 }: CardProps) {
   const classes = [
-    "bg-white rounded-xl border border-border",
-    "shadow-[var(--shadow-card)]",
+    "bg-white/[0.04] rounded-xl border border-white/10",
     hover
-      ? "transition-all duration-200 hover:shadow-[var(--shadow-card-hover)] hover:-translate-y-0.5"
+      ? "transition-all duration-200 hover:border-[#00d4ff]/40 hover:bg-white/[0.06] hover:-translate-y-0.5"
       : "",
     paddingClasses[padding],
     href ? "block" : "",

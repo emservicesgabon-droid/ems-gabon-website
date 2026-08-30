@@ -24,13 +24,13 @@ type Props = ButtonProps | LinkProps;
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-primary-700 text-white hover:bg-primary-800 active:bg-primary-900 shadow-sm",
+    "bg-[#d4a94b] text-[#0a1628] font-bold hover:brightness-110 shadow-lg shadow-[#d4a94b]/25",
   secondary:
-    "bg-grey-100 text-grey-900 hover:bg-grey-200 active:bg-grey-300",
+    "bg-white/10 text-white hover:bg-white/15 active:bg-white/20",
   outline:
-    "border-2 border-primary-700 text-primary-700 hover:bg-primary-50 active:bg-primary-100",
+    "border-2 border-white/25 text-white hover:bg-white/10 active:bg-white/15",
   ghost:
-    "text-grey-700 hover:bg-grey-100 active:bg-grey-200",
+    "text-white/70 hover:bg-white/10 hover:text-white active:bg-white/15",
   danger:
     "bg-danger text-white hover:bg-red-600 active:bg-red-700 shadow-sm",
 };

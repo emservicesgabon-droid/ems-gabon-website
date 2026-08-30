@@ -40,13 +40,13 @@ function StatItem({ stat, animate }: { stat: (typeof stats)[0]; animate: boolean
 
   return (
     <div className="flex flex-col items-center text-center gap-2">
-      <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center mb-1">
-        <Icon size={22} className="text-primary-700" />
+      <div className="w-12 h-12 rounded-xl bg-[#00d4ff]/10 border border-[#00d4ff]/20 flex items-center justify-center mb-1">
+        <Icon size={22} className="text-[#00d4ff]" />
       </div>
-      <div className="text-3xl sm:text-4xl font-bold text-primary-700 tabular-nums">
+      <div className="text-3xl sm:text-4xl font-bold text-white tabular-nums">
         {count.toLocaleString()}{stat.suffix}
       </div>
-      <div className="text-sm text-text-muted font-medium">{t(stat.labelKey)}</div>
+      <div className="text-sm text-white/50 font-medium">{t(stat.labelKey)}</div>
     </div>
   );
 }
@@ -70,7 +70,7 @@ export function StatsCounter() {
   }, []);
 
   return (
-    <section className="py-16 bg-grey-50 border-y border-border">
+    <section className="py-16 bg-[#0a1628] border-b border-white/5">
       <Container>
         <div
           ref={ref}

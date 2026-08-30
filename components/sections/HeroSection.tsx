@@ -1,117 +1,208 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { ArrowRight, Shield, Wifi, Calculator, Phone } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+
+// Les 5 piliers métier EMS GABON — images flottantes autour du titre.
+const HERO_IMAGES = [
+  {
+    src: "/images/hero/fibre-optique.webp",
+    alt: "Fibre optique",
+    w: 1200,
+    h: 1200,
+    pos: "left-[3%] top-[15%] w-32 xl:w-44",
+    glow: "cyan",
+    delay: 0,
+  },
+  {
+    src: "/images/hero/serveur-cloud.webp",
+    alt: "Cloud & Sage 100",
+    w: 1200,
+    h: 1200,
+    pos: "right-[4%] top-[9%] w-36 xl:w-48",
+    glow: "gold",
+    delay: 0.2,
+  },
+  {
+    src: "/images/hero/securite-camera.webp",
+    alt: "Sécurité & vidéosurveillance",
+    w: 1200,
+    h: 1200,
+    pos: "left-[6%] bottom-[16%] w-28 xl:w-40",
+    glow: "gold",
+    delay: 0.4,
+  },
+  {
+    src: "/images/hero/controle-acces.webp",
+    alt: "Contrôle d'accès",
+    w: 1200,
+    h: 800,
+    pos: "right-[5%] bottom-[14%] w-36 xl:w-44",
+    glow: "cyan",
+    delay: 0.6,
+  },
+  {
+    src: "/images/hero/dev-applicatif.webp",
+    alt: "Développement applicatif",
+    w: 1200,
+    h: 800,
+    pos: "left-[15%] top-[54%] w-24 xl:w-32",
+    glow: "cyan",
+    delay: 0.8,
+  },
+] as const;
+
+const glowShadow = {
+  cyan: "0 0 0 1px rgba(0,212,255,0.25), 0 24px 60px -18px rgba(0,212,255,0.45)",
+  gold: "0 0 0 1px rgba(212,169,75,0.30), 0 24px 60px -18px rgba(212,169,75,0.45)",
+} as const;
 
 export function HeroSection() {
   const t = useTranslations();
   const locale = useLocale();
+  const reduce = useReducedMotion();
+
+  const float = (delay: number) =>
+    reduce
+      ? undefined
+      : {
+          animate: { y: [0, -15, 0] },
+          transition: {
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut" as const,
+            delay,
+          },
+        };
 
   return (
-    <section className="hero-logo-bg relative overflow-hidden text-white">
-      {/* ── Decorative blobs – three circles ── */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <section
+      className="relative overflow-hidden text-white"
+      style={{
+        background: `
+          radial-gradient(ellipse 50% 42% at 18% 18%, rgba(0,212,255,0.16), transparent 60%),
+          radial-gradient(ellipse 46% 42% at 84% 24%, rgba(212,169,75,0.20), transparent 60%),
+          radial-gradient(ellipse 70% 55% at 50% 108%, rgba(26,80,100,0.55), transparent 72%),
+          linear-gradient(160deg, #0a1628 0%, #0b1c2e 45%, #0d2536 75%, #0e2b3a 100%)
+        `,
+      }}
+    >
+      {/* Grid pattern subtil, estompé sur les bords */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        aria-hidden="true"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          maskImage:
+            "radial-gradient(ellipse 72% 62% at 50% 40%, black 42%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 72% 62% at 50% 40%, black 42%, transparent 100%)",
+        }}
+      />
 
-        {/* Blob 1 — grand cercle teal centre-gauche */}
-        <div
-          className="absolute -left-40 top-1/2 -translate-y-1/2 w-[650px] h-[650px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(26,80,100,0.75) 0%, rgba(13,45,58,0.45) 50%, transparent 70%)",
-          }}
-        />
+      {/* Ligne néon cyan en haut */}
+      <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/60 to-transparent" />
 
-        {/* Blob 2 — halo orange top-right (effet logo) */}
-        <div
-          className="orange-glow-blob-strong absolute -top-20 right-0 w-[560px] h-[560px] rounded-full"
-        />
-
-        {/* Blob 3 — cercle neon bleu bottom-right */}
-        <div
-          className="absolute -bottom-32 right-1/4 w-[500px] h-[500px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(56,216,255,0.28) 0%, rgba(56,216,255,0.10) 50%, transparent 70%)",
-          }}
-        />
-
-        {/* Ligne neon en haut */}
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#38d8ff] to-transparent opacity-70" />
-
-        {/* Ligne orange subtile en bas à droite */}
-        <div className="absolute bottom-0 right-0 w-1/2 h-[1px] bg-gradient-to-l from-[#f5a623]/60 to-transparent" />
+      {/* ── Images flottantes (desktop uniquement) ── */}
+      <div className="absolute inset-0 hidden lg:block" aria-hidden="true">
+        {HERO_IMAGES.map((img) => (
+          <div key={img.src} className={`absolute ${img.pos}`}>
+            <motion.div
+              {...float(img.delay)}
+              className="relative overflow-hidden rounded-[24px]"
+              style={{ boxShadow: glowShadow[img.glow] }}
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={img.w}
+                height={img.h}
+                priority
+                sizes="(min-width: 1280px) 12rem, 9rem"
+                className="h-auto w-full object-cover"
+              />
+              <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-inset ring-white/10" />
+            </motion.div>
+          </div>
+        ))}
       </div>
 
-      <Container className="relative py-20 sm:py-24 lg:py-32">
-        <div className="max-w-3xl">
-
+      <Container className="relative py-24 sm:py-28 lg:py-36">
+        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 border border-[#38d8ff]/30 bg-[#38d8ff]/8 text-[#8eeeff] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 backdrop-blur-sm">
-            <span className="w-2 h-2 rounded-full bg-[#38d8ff] animate-pulse shadow-[0_0_6px_#38d8ff]" />
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#00d4ff]/30 bg-[#00d4ff]/10 px-3 py-1.5 text-xs font-semibold text-[#8eeeff] backdrop-blur-sm">
+            <span className="h-2 w-2 rounded-full bg-[#00d4ff] shadow-[0_0_6px_#00d4ff]" />
             {t("home.hero_badge")}
           </div>
 
-          {/* Titre — neon bleu électrique */}
-          <h1 className="text-neon-blue text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+          {/* Titre */}
+          <h1
+            className="text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl"
+            style={{ textShadow: "0 2px 40px rgba(0,212,255,0.25)" }}
+          >
             {t("home.hero_title")}
           </h1>
 
-          {/* Sous-titre — neon bleu clair */}
-          <p className="text-neon-blue-sub text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl">
+          {/* Sous-titre */}
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg lg:text-xl">
             {t("home.hero_subtitle")}
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-3 mb-12">
+          {/* CTA */}
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href={`/${locale}/devis`}
-              className="inline-flex items-center gap-2 bg-accent-neon text-primary-900 font-bold text-sm px-6 py-3 rounded-lg hover:brightness-110 transition-all shadow-lg shadow-accent-neon/30"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#d4a94b] px-7 py-3.5 text-sm font-bold text-[#0a1628] shadow-lg shadow-[#d4a94b]/30 transition-all hover:brightness-110"
             >
               {t("home.hero_cta_primary")}
               <ArrowRight size={16} />
             </Link>
             <Link
               href={`/${locale}/services`}
-              className="inline-flex items-center gap-2 border-2 border-[#38d8ff]/40 text-[#8eeeff] font-semibold text-sm px-6 py-3 rounded-lg hover:bg-[#38d8ff]/10 transition-colors"
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-white/25 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               {t("home.hero_cta_secondary")}
             </Link>
           </div>
 
-          {/* Quick features */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[
-              { icon: Shield, labelKey: "services.security_title" },
-              { icon: Wifi, labelKey: "services.fiber_title" },
-              { icon: Calculator, labelKey: "services.sage_title" },
-              { icon: Phone, labelKey: "services.support_title" },
-            ].map(({ icon: Icon, labelKey }) => (
+          {/* ── Grille d'images (mobile / tablette) ── */}
+          <div className="mt-14 grid w-full grid-cols-2 gap-4 lg:hidden">
+            {HERO_IMAGES.map((img, i) => (
               <div
-                key={labelKey}
-                className="flex items-center gap-2 text-white/60 text-xs"
+                key={img.src}
+                className={`relative overflow-hidden rounded-2xl ring-1 ring-white/10 ${
+                  i === 4 ? "col-span-2" : ""
+                }`}
+                style={{ boxShadow: glowShadow[img.glow] }}
               >
-                <div
-                  className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{
-                    background: "rgba(56,216,255,0.12)",
-                    border: "1px solid rgba(56,216,255,0.25)",
-                  }}
-                >
-                  <Icon size={14} className="text-[#38d8ff]" />
-                </div>
-                <span>{t(labelKey)}</span>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={img.w}
+                  height={img.h}
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className={`w-full object-cover ${
+                    i === 4 ? "h-40" : "aspect-square"
+                  }`}
+                />
               </div>
             ))}
           </div>
         </div>
       </Container>
 
-      {/* Vague bas — blanche pour transition vers le contenu */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none" aria-hidden="true">
-        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="w-full h-10 fill-white">
-          <path d="M0,60 C300,0 900,60 1200,0 L1200,60 Z" />
-        </svg>
-      </div>
+      {/* Fondu vers le fond sombre des sections suivantes (#0a1628) */}
+      <div
+        className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
+        aria-hidden="true"
+        style={{ background: "linear-gradient(to bottom, transparent, #0a1628)" }}
+      />
     </section>
   );
 }

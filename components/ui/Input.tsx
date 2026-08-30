@@ -14,7 +14,7 @@ export function FieldWrapper({ label, error, hint, required, className = "", chi
   return (
     <div className={`flex flex-col gap-1.5 ${className}`}>
       {label && (
-        <label htmlFor={htmlFor} className="text-sm font-medium text-grey-700">
+        <label htmlFor={htmlFor} className="text-sm font-medium text-white/80">
           {label}
           {required && <span className="text-danger ml-1" aria-hidden="true">*</span>}
         </label>
@@ -27,7 +27,7 @@ export function FieldWrapper({ label, error, hint, required, className = "", chi
 }
 
 const inputBaseClasses =
-  "w-full rounded-lg border border-border bg-white px-3.5 py-2.5 text-sm text-text-heading placeholder:text-grey-400 transition-colors duration-150 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 disabled:bg-grey-50 disabled:cursor-not-allowed";
+  "w-full rounded-lg border border-white/12 bg-white/[0.05] px-3.5 py-2.5 text-sm text-white placeholder:text-white/35 transition-colors duration-150 focus:outline-none focus:border-[#00d4ff]/60 focus:ring-2 focus:ring-[#00d4ff]/20 disabled:bg-white/[0.02] disabled:cursor-not-allowed";
 
 const inputErrorClasses =
   "border-danger focus:border-danger focus:ring-red-100";
@@ -97,7 +97,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
       <select
         ref={ref}
         id={id}
-        className={`${inputBaseClasses} ${error ? inputErrorClasses : ""} ${className}`}
+        className={`${inputBaseClasses} [&>option]:bg-[#0b1c2e] [&>option]:text-white ${error ? inputErrorClasses : ""} ${className}`}
         {...rest}
       >
         {placeholder && <option value="">{placeholder}</option>}

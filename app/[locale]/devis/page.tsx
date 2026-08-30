@@ -49,9 +49,9 @@ export default async function DevisPage({ params }: Props) {
           </svg>
         </div>
       </section>
-      <section className="py-16 bg-grey-50">
+      <section className="py-16 bg-[#0b1c2e]">
         <Container size="md">
-          <div className="bg-white rounded-2xl border border-border p-6 sm:p-10">
+          <div className="bg-white/[0.04] rounded-2xl border border-white/10 p-6 sm:p-10">
             <DevisForm />
           </div>
         </Container>

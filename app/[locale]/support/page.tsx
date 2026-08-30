@@ -101,7 +101,7 @@ function SupportContent() {
       </section>
 
       {/* Description */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-[#0a1628]">
         <Container>
           <p className="text-base sm:text-lg text-text-body leading-relaxed max-w-3xl">
             {t("support.description")}
@@ -110,7 +110,7 @@ function SupportContent() {
       </section>
 
       {/* Support types */}
-      <section className="py-14 bg-grey-50 border-y border-border">
+      <section className="py-14 bg-[#0b1c2e] border-y border-white/10">
         <Container>
           <SectionHeading title={t("support.title")} align="left" className="mb-8" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -126,7 +126,7 @@ function SupportContent() {
       </section>
 
       {/* Contracts */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-[#0a1628]">
         <Container>
           <SectionHeading title={t("support.contracts_title")} align="left" className="mb-8" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -135,8 +135,8 @@ function SupportContent() {
                 key={titleKey}
                 className={`rounded-xl border p-6 flex flex-col gap-4 ${
                   featured
-                    ? "border-primary-400 bg-primary-50 ring-2 ring-primary-300"
-                    : "border-border bg-white"
+                    ? "border-[#00d4ff]/60 bg-white/[0.04] ring-2 ring-[#00d4ff]/30"
+                    : "border-white/10 bg-white/[0.02]"
                 }`}
               >
                 {featured && <Badge variant="primary" className="self-start">Recommandé</Badge>}
@@ -145,7 +145,7 @@ function SupportContent() {
                 <Link
                   href={`/${locale}/devis`}
                   className={`flex items-center gap-1.5 text-sm font-semibold ${
-                    featured ? "text-primary-700" : "text-grey-600 hover:text-primary-700"
+                    featured ? "text-[#00d4ff]" : "text-white/60 hover:text-[#8eeeff]"
                   } transition-colors`}
                 >
                   {t("common.cta_quote")} <ArrowRight size={13} />
@@ -157,7 +157,7 @@ function SupportContent() {
       </section>
 
       {/* FAQ */}
-      <section className="py-14 bg-grey-50 border-t border-border">
+      <section className="py-14 bg-[#0b1c2e] border-t border-white/10">
         <Container size="lg">
           <SectionHeading title={t("support.faq_title")} className="mb-10" />
           <div className="max-w-3xl mx-auto divide-y divide-border">
@@ -167,7 +167,7 @@ function SupportContent() {
                   {item.q}
                   <ChevronDown
                     size={18}
-                    className="flex-shrink-0 text-grey-400 group-open:rotate-180 transition-transform duration-200"
+                    className="flex-shrink-0 text-white/40 group-open:rotate-180 transition-transform duration-200"
                   />
                 </summary>
                 <p className="mt-3 text-sm text-text-muted leading-relaxed">{item.a}</p>

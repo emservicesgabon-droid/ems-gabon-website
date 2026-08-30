@@ -95,7 +95,7 @@ function AboutContent() {
       </section>
 
       {/* History + Mission + Vision */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-[#0a1628]">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card padding="lg" className="lg:col-span-2">
@@ -127,7 +127,7 @@ function AboutContent() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-grey-50">
+      <section className="py-16 bg-[#0b1c2e]">
         <Container>
           <SectionHeading title={t("about.values_title")} className="mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -143,7 +143,7 @@ function AboutContent() {
       </section>
 
       {/* Team */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0a1628]">
         <Container>
           <SectionHeading
             title={t("about.team_title")}
@@ -205,17 +205,17 @@ function AboutContent() {
             <div className="flex justify-center">
               {team.filter(m => m.group === "operations").map((member) => (
                 <Card key={member.id} padding="md" hover className="w-full max-w-sm">
-                  <div className="w-16 h-16 rounded-full mb-4 mx-auto overflow-hidden flex-shrink-0 border-2 border-primary-200">
+                  <div className="w-16 h-16 rounded-full mb-4 mx-auto overflow-hidden flex-shrink-0 border-2 border-white/10">
                     {member.avatar ? (
                       <Image src={member.avatar} alt={member.name} width={64} height={64} className="w-full h-full object-cover object-top" />
                     ) : (
-                      <div className="w-full h-full bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-xl">
+                      <div className="w-full h-full bg-[#00d4ff]/12 flex items-center justify-center text-[#00d4ff] font-bold text-xl">
                         {member.name.charAt(0)}
                       </div>
                     )}
                   </div>
                   <h3 className="font-semibold text-text-heading text-center mb-0.5">{member.name}</h3>
-                  <p className="text-sm text-primary-600 text-center mb-3">
+                  <p className="text-sm text-[#00d4ff] text-center mb-3">
                     {locale === "en" ? member.roleEn : member.role}
                   </p>
                   <p className="text-xs text-text-muted leading-relaxed mb-3">
@@ -235,20 +235,20 @@ function AboutContent() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px flex-1 bg-border" />
-              <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full text-grey-600"
+              <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full text-white/60"
                 style={{ background: "rgba(100,116,139,0.10)", border: "1px solid rgba(100,116,139,0.25)" }}>
                 Équipe terrain
               </span>
               <span className="h-px flex-1 bg-border" />
             </div>
             {team.filter(m => m.group === "terrain").map((member) => (
-              <div key={member.id} className="bg-grey-50 border border-border rounded-xl p-6 flex flex-col sm:flex-row items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-grey-200 flex items-center justify-center flex-shrink-0">
-                  <Users size={28} className="text-grey-500" />
+              <div key={member.id} className="bg-white/[0.04] border border-white/10 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-6">
+                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <Users size={28} className="text-white/50" />
                 </div>
                 <div className="flex-1 text-center sm:text-left">
                   <h3 className="font-semibold text-text-heading mb-0.5">{member.name}</h3>
-                  <p className="text-sm text-grey-500 mb-2">
+                  <p className="text-sm text-white/50 mb-2">
                     {locale === "en" ? member.roleEn : member.role}
                   </p>
                   <p className="text-xs text-text-muted leading-relaxed mb-3">
@@ -268,7 +268,7 @@ function AboutContent() {
       </section>
 
       {/* Zone d'intervention */}
-      <section className="py-16 bg-grey-50">
+      <section className="py-16 bg-[#0b1c2e]">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -280,13 +280,13 @@ function AboutContent() {
               />
               <p className="text-text-body leading-relaxed mb-6">{t("about.zones_text")}</p>
 
-              <div className="bg-white rounded-xl border border-border p-5">
+              <div className="bg-white/[0.04] rounded-xl border border-white/10 p-5">
                 <h3 className="font-semibold text-text-heading mb-4">{t("about.clients_title")}</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {clientTypes.map(({ icon: Icon, labelKey }) => (
                     <div key={labelKey} className="flex items-center gap-2.5 text-sm text-text-body">
-                      <div className="w-7 h-7 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0">
-                        <Icon size={13} className="text-primary-700" />
+                      <div className="w-7 h-7 rounded-lg bg-[#00d4ff]/12 flex items-center justify-center flex-shrink-0">
+                        <Icon size={13} className="text-[#00d4ff]" />
                       </div>
                       {t(labelKey)}
                     </div>
@@ -296,11 +296,11 @@ function AboutContent() {
             </div>
 
             {/* Map placeholder */}
-            <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl h-72 flex items-center justify-center border border-primary-200">
+            <div className="bg-gradient-to-br from-[#0d2536] to-[#12324a] rounded-2xl h-72 flex items-center justify-center border border-white/10">
               <div className="text-center">
-                <MapPin size={40} className="text-primary-600 mx-auto mb-3" />
-                <p className="text-primary-700 font-semibold">Gabon — Afrique Centrale</p>
-                <p className="text-primary-600 text-sm mt-1">Libreville · Port-Gentil · Franceville · Oyem</p>
+                <MapPin size={40} className="text-[#00d4ff] mx-auto mb-3" />
+                <p className="text-[#00d4ff] font-semibold">Gabon — Afrique Centrale</p>
+                <p className="text-[#00d4ff] text-sm mt-1">Libreville · Port-Gentil · Franceville · Oyem</p>
               </div>
             </div>
           </div>

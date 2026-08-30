@@ -19,7 +19,7 @@ export default async function MentionsLegalesPage({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <section className="py-16 sm:py-20 bg-white">
+    <section className="py-16 sm:py-20 bg-[#0a1628]">
       <Container size="md">
         <h1 className="text-3xl font-bold text-text-heading mb-2">Mentions Légales</h1>
         <p className="text-text-muted text-sm mb-10">Dernière mise à jour : mai 2025</p>
@@ -65,7 +65,7 @@ export default async function MentionsLegalesPage({ params }: Props) {
 
           <div>
             <h2 className="text-xl font-bold text-text-heading mb-3">7. Contact</h2>
-            <p className="text-sm">Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à : <a href="mailto:ems@emsgabon.com" className="text-primary-700 underline">ems@emsgabon.com</a></p>
+            <p className="text-sm">Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à : <a href="mailto:ems@emsgabon.com" className="text-[#00d4ff] underline">ems@emsgabon.com</a></p>
           </div>
 
         </div>

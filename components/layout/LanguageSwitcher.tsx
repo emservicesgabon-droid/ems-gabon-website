@@ -24,18 +24,18 @@ export function LanguageSwitcher({ className = "", light = false }: LanguageSwit
   const isEn = locale === "en";
   const baseClass = light
     ? "text-white/80 hover:text-white"
-    : "text-grey-600 hover:text-primary-700";
+    : "text-white/60 hover:text-[#8eeeff]";
 
   return (
     <div className={`flex items-center gap-1 text-sm font-medium ${className}`}>
-      <Globe size={14} className={light ? "text-white/60" : "text-grey-400"} />
+      <Globe size={14} className={light ? "text-white/60" : "text-white/40"} />
       <button
         onClick={() => switchLocale("fr")}
         className={`px-1.5 py-0.5 rounded transition-colors ${
           !isEn
             ? light
               ? "text-white font-semibold"
-              : "text-primary-700 font-semibold"
+              : "text-[#00d4ff] font-semibold"
             : baseClass
         }`}
         aria-label="Français"
@@ -43,14 +43,14 @@ export function LanguageSwitcher({ className = "", light = false }: LanguageSwit
       >
         FR
       </button>
-      <span className={light ? "text-white/40" : "text-grey-300"}>/</span>
+      <span className={light ? "text-white/40" : "text-white/30"}>/</span>
       <button
         onClick={() => switchLocale("en")}
         className={`px-1.5 py-0.5 rounded transition-colors ${
           isEn
             ? light
               ? "text-white font-semibold"
-              : "text-primary-700 font-semibold"
+              : "text-[#00d4ff] font-semibold"
             : baseClass
         }`}
         aria-label="English"

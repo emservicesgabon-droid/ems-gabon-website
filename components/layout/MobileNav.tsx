@@ -63,7 +63,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 z-50 h-full w-[300px] max-w-[90vw] bg-white shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 right-0 z-50 h-full w-[300px] max-w-[90vw] bg-[#0b1c2e] border-l border-white/10 shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         role="dialog"
@@ -74,11 +74,11 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
         <div className="flex items-center justify-between px-5 py-4 border-b border-border">
           <div className="flex items-center gap-2">
             <Image src="/logo.png" alt="EMS GABON" width={36} height={36} className="rounded-lg object-contain" />
-            <span className="font-bold text-primary-800 text-base">EMS GABON</span>
+            <span className="font-bold text-white text-base">EMS GABON</span>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-grey-500 hover:bg-grey-100 transition-colors"
+            className="p-1.5 rounded-lg text-white/60 hover:bg-white/10 transition-colors"
             aria-label="Fermer le menu"
           >
             <X size={20} />
@@ -91,26 +91,26 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center justify-between px-5 py-3 text-sm font-medium text-grey-700 hover:text-primary-700 hover:bg-primary-50 transition-colors"
+              className="flex items-center justify-between px-5 py-3 text-sm font-medium text-white/80 hover:text-[#00d4ff] hover:bg-white/5 transition-colors"
             >
               {t(link.labelKey)}
-              <ChevronRight size={14} className="text-grey-400" />
+              <ChevronRight size={14} className="text-white/30" />
             </Link>
           ))}
         </nav>
 
         {/* Bottom CTA */}
-        <div className="border-t border-border p-5 space-y-3">
+        <div className="border-t border-white/10 p-5 space-y-3">
           <Link
             href={`/${locale}/devis`}
-            className="flex items-center justify-center gap-2 w-full bg-primary-700 text-white text-sm font-semibold py-3 rounded-lg hover:bg-primary-800 transition-colors"
+            className="flex items-center justify-center gap-2 w-full bg-[#d4a94b] text-[#0a1628] text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all"
           >
             {t("common.cta_quote")}
           </Link>
           <div className="flex gap-3">
             <a
               href="tel:+241011454973"
-              className="flex-1 flex items-center justify-center gap-1.5 text-sm text-grey-600 border border-border rounded-lg py-2.5 hover:bg-grey-50 transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 text-sm text-white/70 border border-white/15 rounded-lg py-2.5 hover:bg-white/10 transition-colors"
             >
               <Phone size={14} />
               {t("common.call")}
@@ -119,7 +119,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
               href="https://wa.me/241011454973"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-1.5 text-sm text-accent-green border border-border rounded-lg py-2.5 hover:bg-accent-green-light transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 text-sm text-green-400 border border-white/15 rounded-lg py-2.5 hover:bg-green-500/10 transition-colors"
             >
               <MessageSquare size={14} />
               WhatsApp

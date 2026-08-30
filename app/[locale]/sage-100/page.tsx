@@ -39,7 +39,7 @@ function Sage100Content() {
       ourServices={["sage.service_install", "sage.service_training", "sage.service_support", "sage.service_migration"]}
     >
       {/* Modes */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-[#0a1628]">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
             {modes.map(({ icon: Icon, titleKey, descKey, variant }) => (
@@ -55,7 +55,7 @@ function Sage100Content() {
           <h2 className="text-xl font-bold text-text-heading mb-4">{t("sage.modules_title")}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {modules.map((key) => (
-              <div key={key} className="flex flex-col items-center gap-2 p-4 bg-grey-50 rounded-xl border border-border text-center">
+              <div key={key} className="flex flex-col items-center gap-2 p-4 bg-white/[0.04] rounded-xl border border-white/10 text-center">
                 <div className="w-8 h-8 rounded-lg bg-accent-green-light flex items-center justify-center">
                   <BookOpen size={14} className="text-accent-green" />
                 </div>

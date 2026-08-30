@@ -16,13 +16,13 @@ export function Breadcrumbs({ crumbs, className = "" }: BreadcrumbsProps) {
     <nav aria-label="Breadcrumb" className={`flex items-center gap-1 text-sm ${className}`}>
       {crumbs.map((crumb, i) => (
         <span key={i} className="flex items-center gap-1">
-          {i > 0 && <ChevronRight size={13} className="text-grey-400" aria-hidden="true" />}
+          {i > 0 && <ChevronRight size={13} className="text-white/30" aria-hidden="true" />}
           {crumb.href && i < crumbs.length - 1 ? (
-            <Link href={crumb.href} className="text-grey-500 hover:text-primary-700 transition-colors">
+            <Link href={crumb.href} className="text-white/50 hover:text-[#00d4ff] transition-colors">
               {crumb.label}
             </Link>
           ) : (
-            <span className={i === crumbs.length - 1 ? "text-text-heading font-medium" : "text-grey-500"}>
+            <span className={i === crumbs.length - 1 ? "text-white font-medium" : "text-white/50"}>
               {crumb.label}
             </span>
           )}

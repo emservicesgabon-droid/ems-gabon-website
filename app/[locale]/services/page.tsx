@@ -95,22 +95,22 @@ function ServicesContent() {
       </section>
 
       {/* Solution blocks */}
-      <section className="py-12 bg-grey-50 border-b border-border">
+      <section className="py-12 bg-[#0b1c2e] border-b border-white/10">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {solutionBlocks.map(({ icon: Icon, titleKey, descKey, href, color }) => (
               <Link
                 key={href}
                 href={href}
-                className="group flex items-start gap-4 bg-white rounded-xl border border-border p-6 hover:border-primary-200 hover:shadow-[var(--shadow-card-hover)] transition-all"
+                className="group flex items-start gap-4 bg-white/[0.04] rounded-xl border border-white/10 p-6 hover:border-white/10 hover:shadow-[var(--shadow-card-hover)] transition-all"
               >
                 <IconBox variant={color} size="lg"><Icon size={26} /></IconBox>
                 <div className="flex-1">
-                  <h2 className="font-bold text-text-heading text-lg mb-2 group-hover:text-primary-700 transition-colors">
+                  <h2 className="font-bold text-text-heading text-lg mb-2 group-hover:text-[#8eeeff] transition-colors">
                     {t(titleKey)}
                   </h2>
                   <p className="text-sm text-text-muted leading-relaxed line-clamp-2">{t(descKey)}</p>
-                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary-600 mt-3">
+                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#00d4ff] mt-3">
                     {t("common.cta_discover")} <ArrowRight size={12} />
                   </span>
                 </div>
@@ -121,7 +121,7 @@ function ServicesContent() {
       </section>
 
       {/* All services grid */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-[#0a1628]">
         <Container>
           <SectionHeading
             title={t("services.title")}
@@ -137,20 +137,20 @@ function ServicesContent() {
                   key={service.id}
                   id={service.id}
                   href={`/${locale}/${service.slug}`}
-                  className="group flex flex-col gap-4 p-6 bg-white rounded-xl border border-border hover:border-primary-200 hover:shadow-[var(--shadow-card-hover)] transition-all"
+                  className="group flex flex-col gap-4 p-6 bg-white/[0.04] rounded-xl border border-white/10 hover:border-white/10 hover:shadow-[var(--shadow-card-hover)] transition-all"
                 >
                   <IconBox variant={colorMap[service.color]} size="md">
                     <Icon size={22} />
                   </IconBox>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-text-heading mb-1.5 group-hover:text-primary-700 transition-colors">
+                    <h3 className="font-semibold text-text-heading mb-1.5 group-hover:text-[#8eeeff] transition-colors">
                       {t(service.titleKey)}
                     </h3>
                     <p className="text-sm text-text-muted leading-relaxed">
                       {t(service.descriptionKey)}
                     </p>
                   </div>
-                  <span className="flex items-center gap-1 text-xs font-semibold text-primary-600 group-hover:gap-2 transition-all">
+                  <span className="flex items-center gap-1 text-xs font-semibold text-[#00d4ff] group-hover:gap-2 transition-all">
                     {t("common.cta_discover")} <ArrowRight size={12} />
                   </span>
                 </Link>

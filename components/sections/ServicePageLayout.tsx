@@ -81,15 +81,15 @@ export function ServicePageLayout({
           </div>
         </Container>
 
-        <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none" aria-hidden="true">
-          <svg viewBox="0 0 1200 50" preserveAspectRatio="none" className="w-full h-8 fill-white">
-            <path d="M0,50 C300,0 900,50 1200,0 L1200,50 Z" />
-          </svg>
-        </div>
+        <div
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-24"
+          aria-hidden="true"
+          style={{ background: "linear-gradient(to bottom, transparent, #0a1628)" }}
+        />
       </section>
 
       {/* Description */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-[#0a1628]">
         <Container>
           <div className="max-w-3xl">
             <p className="text-base sm:text-lg text-text-body leading-relaxed">{t(descriptionKey)}</p>
@@ -99,11 +99,11 @@ export function ServicePageLayout({
 
       {/* Features grid */}
       {features.length > 0 && (
-        <section className="py-14 bg-grey-50 border-y border-border">
+        <section className="py-14 bg-[#0b1c2e] border-y border-white/5">
           <Container>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
               {features.map(({ icon: FIcon, titleKey: ftk, descKey: fdk }) => (
-                <div key={ftk} className="flex gap-4 bg-white p-5 rounded-xl border border-border">
+                <div key={ftk} className="flex gap-4 bg-white/[0.04] p-5 rounded-xl border border-white/10">
                   {FIcon && (
                     <IconBox variant="primary" size="sm" className="flex-shrink-0">
                       <FIcon size={16} />
@@ -122,7 +122,7 @@ export function ServicePageLayout({
 
       {/* Our services */}
       {ourServices.length > 0 && (
-        <section className="py-14 bg-white">
+        <section className="py-14 bg-[#0a1628]">
           <Container>
             <h2 className="text-xl font-bold text-text-heading mb-6">
               {servicesTitleKey ? t(servicesTitleKey) : t("services.title")}
@@ -141,15 +141,15 @@ export function ServicePageLayout({
 
       {/* Benefits */}
       {benefits.length > 0 && (
-        <section className="py-14 bg-grey-50 border-y border-border">
+        <section className="py-14 bg-[#0b1c2e] border-y border-white/5">
           <Container>
             <h2 className="text-xl font-bold text-text-heading mb-6">
               {benefitsTitleKey ? t(benefitsTitleKey) : "Avantages"}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {benefits.map((key, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-border text-sm text-text-body">
-                  <CheckCircle size={16} className="text-primary-600 flex-shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-3 bg-white/[0.04] p-4 rounded-xl border border-white/10 text-sm text-text-body">
+                  <CheckCircle size={16} className="text-[#00d4ff] flex-shrink-0 mt-0.5" />
                   {t(key)}
                 </div>
               ))}
@@ -161,9 +161,9 @@ export function ServicePageLayout({
       {children}
 
       {/* CTA strip */}
-      <section className="py-12 bg-white border-t border-border">
+      <section className="py-12 bg-[#0a1628] border-t border-white/5">
         <Container>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-primary-50 rounded-2xl p-6 sm:p-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.04] border border-white/10 rounded-2xl p-6 sm:p-8">
             <div>
               <h3 className="font-bold text-text-heading text-lg mb-1">
                 {t("home.cta_title")}
@@ -179,7 +179,7 @@ export function ServicePageLayout({
               </Link>
               <Link
                 href={`/${locale}/contact`}
-                className="inline-flex items-center gap-2 border border-border text-text-body text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-grey-50 transition-colors"
+                className="inline-flex items-center gap-2 border border-white/20 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-white/10 transition-colors"
               >
                 {t("common.cta_contact")}
               </Link>

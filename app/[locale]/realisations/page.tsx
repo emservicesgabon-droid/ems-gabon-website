@@ -30,11 +30,11 @@ const categoryColors: Record<string, "primary" | "success" | "neon" | "yellow" |
 };
 
 const categoryFallback: Record<string, { Icon: ComponentType<{ size?: number; className?: string }>; bg: string; color: string }> = {
-  enterprise: { Icon: Building2,     bg: "bg-primary-100",  color: "text-primary-600" },
+  enterprise: { Icon: Building2,     bg: "bg-[#00d4ff]/12",  color: "text-[#00d4ff]" },
   public:     { Icon: Landmark,      bg: "bg-success-100",  color: "text-success-700" },
   security:   { Icon: ShieldCheck,   bg: "bg-[rgba(56,216,255,0.10)]", color: "text-[#1ab8e0]" },
   network:    { Icon: Network,       bg: "bg-yellow-100",   color: "text-yellow-700" },
-  training:   { Icon: GraduationCap, bg: "bg-grey-100",     color: "text-grey-500" },
+  training:   { Icon: GraduationCap, bg: "bg-white/8",     color: "text-white/60" },
 };
 
 function RealisationsContent() {
@@ -81,13 +81,13 @@ function RealisationsContent() {
       </section>
 
       {/* Projects grid */}
-      <section className="py-16 sm:py-20 bg-grey-50">
+      <section className="py-16 sm:py-20 bg-[#0b1c2e]">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-xl border border-border overflow-hidden hover:border-primary-200 hover:shadow-[var(--shadow-card-hover)] transition-all duration-200 flex flex-col"
+                className="bg-white/[0.04] rounded-xl border border-white/10 overflow-hidden hover:border-white/10 hover:shadow-[var(--shadow-card-hover)] transition-all duration-200 flex flex-col"
               >
                 {/* Image */}
                 <div className="relative h-40 overflow-hidden">
@@ -154,7 +154,7 @@ function RealisationsContent() {
                       <span className="text-xs font-semibold text-accent-green uppercase tracking-wide block mb-0.5">
                         {t("realisations.result")}
                       </span>
-                      <p className="text-xs text-grey-700">
+                      <p className="text-xs text-white/70">
                         {locale === "en" ? project.resultEn : project.result}
                       </p>
                     </div>

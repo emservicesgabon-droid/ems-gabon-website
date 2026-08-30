@@ -35,9 +35,9 @@ export default async function HomePage({ params }: Props) {
       <StatsCounter />
       <ServicesGrid featured />
       <WhyChooseUs />
-      <TestimonialsCarousel />
+      <TestimonialsCarousel dark />
       <RealisationsPreview />
-      <PartnerLogos />
+      <PartnerLogos dark />
       <CTABanner />
     </>
   );
