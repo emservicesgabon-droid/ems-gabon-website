@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import {
   motion,
-  AnimatePresence,
   useReducedMotion,
   useMotionValue,
   useSpring,
@@ -226,13 +225,13 @@ function HeroModal({ img, onClose }: { img: HeroImage | null; onClose: () => voi
   }, [img, onClose]);
 
   return (
-    <AnimatePresence>
+    <>
       {img && (
         <motion.div
           className="fixed inset-0 z-[100] flex items-center justify-center p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           onClick={onClose}
           data-lenis-prevent
         >
@@ -244,8 +243,7 @@ function HeroModal({ img, onClose }: { img: HeroImage | null; onClose: () => voi
             onClick={(e) => e.stopPropagation()}
             initial={{ scale: 0.85, opacity: 0, y: 12 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 12 }}
-            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
             className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-[#0b1c2e] shadow-2xl"
           >
             <button
@@ -287,7 +285,7 @@ function HeroModal({ img, onClose }: { img: HeroImage | null; onClose: () => voi
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </>
   );
 }
 
