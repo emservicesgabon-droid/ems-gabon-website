@@ -47,6 +47,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
     { labelKey: "nav.formation", href: `/${locale}/formation` },
     { labelKey: "nav.support", href: `/${locale}/support` },
     { labelKey: "nav.realisations", href: `/${locale}/realisations` },
+    { labelKey: "nav.galerie", href: `/${locale}/galerie` },
     { labelKey: "nav.contact", href: `/${locale}/contact` },
   ];
 

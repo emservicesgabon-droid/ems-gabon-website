@@ -21,6 +21,7 @@ export const mainNav: NavItem[] = [
     ],
   },
   { labelKey: "nav.realisations", href: "/realisations" },
+  { labelKey: "nav.galerie", href: "/galerie" },
   { labelKey: "nav.contact", href: "/contact" },
 ];
 
@@ -37,6 +38,7 @@ export const footerServiceLinks: NavItem[] = [
 export const footerCompanyLinks: NavItem[] = [
   { labelKey: "nav.about", href: "/a-propos" },
   { labelKey: "nav.realisations", href: "/realisations" },
+  { labelKey: "nav.galerie", href: "/galerie" },
   { labelKey: "nav.blog", href: "/blog" },
   { labelKey: "nav.contact", href: "/contact" },
 ];

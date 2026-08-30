@@ -18,10 +18,18 @@
     "formation": "Training",
     "support": "Support",
     "realisations": "Portfolio",
+    "galerie": "Gallery",
     "contact": "Contact",
     "devis": "Get a Quote",
     "rdv": "Book Appointment",
     "blog": "Blog"
+  },
+  "galerie": {
+    "title": "In the Field",
+    "subtitle": "Proof in pictures. No stock photos — only our real job sites in Gabon.",
+    "filter_all": "All",
+    "filter_videos": "Videos",
+    "empty": "No media for this filter."
   },
   "common": {
     "cta_quote": "Get a Quote",

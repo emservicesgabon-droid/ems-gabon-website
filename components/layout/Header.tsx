@@ -152,6 +152,17 @@ export function Header() {
               </Link>
 
               <Link
+                href={`/${locale}/galerie`}
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  isActive(`/${locale}/galerie`)
+                    ? "text-[#f5a623] bg-[#f5a623]/10"
+                    : "text-white/80 hover:text-[#f5a623] hover:bg-[#f5a623]/10"
+                }`}
+              >
+                {t("nav.galerie")}
+              </Link>
+
+              <Link
                 href={`/${locale}/contact`}
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                   isActive(`/${locale}/contact`)

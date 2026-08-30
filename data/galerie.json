@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "type": "image",
+    "src": "/galerie/fibre/exemple-tirage-01.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Tirage fourreaux - Akanda",
+    "date": "2025-08-30"
+  },
+  {
+    "id": 2,
+    "type": "image",
+    "src": "/galerie/videosurveillance/exemple-camera-01.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Pose caméras - CHU Owendo",
+    "date": "2025-08-30"
+  },
+  {
+    "id": 3,
+    "type": "video",
+    "src": "/galerie/videos/exemple-chantier.mp4",
+    "poster": "/galerie/posters/exemple-chantier.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Installation en cours - 25s",
+    "date": "2025-08-29"
+  }
+]

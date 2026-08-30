@@ -18,10 +18,18 @@
     "formation": "Formation",
     "support": "Support & Assistance",
     "realisations": "Réalisations",
+    "galerie": "Galerie",
     "contact": "Contact",
     "devis": "Demander un devis",
     "rdv": "Prendre RDV",
     "blog": "Blog"
+  },
+  "galerie": {
+    "title": "Sur le Terrain",
+    "subtitle": "La preuve en images. Pas de banque d'images, que nos chantiers réels au Gabon.",
+    "filter_all": "Tous",
+    "filter_videos": "Vidéos",
+    "empty": "Aucun média pour ce filtre."
   },
   "common": {
     "cta_quote": "Demander un devis",
