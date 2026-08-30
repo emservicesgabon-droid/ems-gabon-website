@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import { pageMeta } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { useTranslations, useLocale } from "next-intl";
 import type { Metadata } from "next";
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "realisations" });
-  return { title: t("title"), description: t("description") };
+  return pageMeta({ locale, title: t("title"), description: t("description"), path: "/realisations" });
 }
 
 const categoryColors: Record<string, "primary" | "success" | "neon" | "yellow" | "grey"> = {

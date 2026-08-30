@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       template: `%s | ${t("siteName")}`,
     },
     description: t("siteDescription"),
-    metadataBase: new URL("https://ems-gabon.com"),
+    metadataBase: new URL("https://www.emsgabon.com"),
     openGraph: {
       siteName: t("siteName"),
       locale: locale === "fr" ? "fr_GA" : "en_US",

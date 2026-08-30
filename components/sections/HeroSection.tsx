@@ -185,7 +185,7 @@ function FloatingImage({
               alt={t(img.titleKey)}
               width={img.w}
               height={img.h}
-              priority
+              loading="lazy"
               sizes="(min-width: 1280px) 8rem, 6rem"
               className="h-auto w-full object-cover transition duration-300 group-hover:brightness-110"
             />

@@ -1,4 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { pageMeta } from "@/lib/seo";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "sage" });
-  return { title: t("title"), description: t("description") };
+  return pageMeta({ locale, title: t("title"), description: t("description"), path: "/sage-100" });
 }
 
 function Sage100Content() {
