@@ -3,45 +3,127 @@
     "id": 1,
     "type": "video",
     "src": "/galerie/videos/MANGOUBA.mp4",
-    "poster": "/galerie/posters/mangouba.webp",
-    "categorie": "Chantier",
-    "titre": "Chantier MANGOUBA",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre — MANGOUBA",
     "date": "2026",
+    "poster": "/galerie/posters/mangouba.webp",
     "w": 1280,
     "h": 720
   },
   {
     "id": 2,
-    "type": "image",
-    "src": "/galerie/videosurveillance/videosurveillance-1.webp",
-    "categorie": "Vidéosurveillance",
-    "titre": "Installation vidéosurveillance",
+    "type": "video",
+    "src": "/galerie/videos/portail-1.mp4",
+    "categorie": "Portail Automatique",
+    "titre": "Portail coulissant en action",
     "date": "2026",
-    "w": 1080,
-    "h": 810
+    "poster": "/galerie/posters/portail-1.webp",
+    "w": 1280,
+    "h": 720
   },
   {
     "id": 3,
-    "type": "image",
-    "src": "/galerie/videosurveillance/videosurveillance-2.webp",
-    "categorie": "Vidéosurveillance",
-    "titre": "Installation vidéosurveillance",
+    "type": "video",
+    "src": "/galerie/videos/portail-2.mp4",
+    "categorie": "Portail Automatique",
+    "titre": "Portail automatisé — démonstration",
     "date": "2026",
-    "w": 1080,
-    "h": 792
+    "poster": "/galerie/posters/portail-2.webp",
+    "w": 1280,
+    "h": 720
   },
   {
     "id": 4,
     "type": "image",
-    "src": "/galerie/videosurveillance/videosurveillance-3.webp",
-    "categorie": "Vidéosurveillance",
-    "titre": "Installation vidéosurveillance",
+    "src": "/galerie/portail-automatique/portail-1.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Pose de la motorisation coulissante",
     "date": "2026",
     "w": 1080,
     "h": 810
   },
   {
     "id": 5,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-2.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Installation du moteur de portail",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 6,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-3.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Réglage du moteur & de la crémaillère",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 7,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-4.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Portail battant en fer forgé",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 8,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-5.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Coffret de commande du portail",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 9,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-6.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Motorisation à bras CENTURION",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 10,
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-1.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Poste de supervision multi-caméras",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 11,
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-2.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Centrale de vidéosurveillance (36 caméras)",
+    "date": "2026",
+    "w": 1080,
+    "h": 792
+  },
+  {
+    "id": 12,
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-3.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Contrôle des caméras extérieures",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 13,
     "type": "image",
     "src": "/galerie/videosurveillance/videosurveillance-4.webp",
     "categorie": "Vidéosurveillance",
@@ -51,101 +133,21 @@
     "h": 412
   },
   {
-    "id": 6,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-1.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
-    "id": 7,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-2.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
-    "id": 8,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-3.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 810,
-    "h": 1080
-  },
-  {
-    "id": 9,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-4.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
-    "id": 10,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-5.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
-    "id": 11,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-6.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 810,
-    "h": 1080
-  },
-  {
-    "id": 12,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-7.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
-    "id": 13,
-    "type": "image",
-    "src": "/galerie/fibre/fibre-8.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 1080,
-    "h": 810
-  },
-  {
     "id": 14,
     "type": "image",
-    "src": "/galerie/fibre/fibre-9.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "src": "/galerie/reseau/reseau-1.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Baie de brassage & enregistreur",
     "date": "2026",
-    "w": 1080,
-    "h": 810
+    "w": 810,
+    "h": 1080
   },
   {
     "id": 15,
     "type": "image",
-    "src": "/galerie/fibre/fibre-10.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "src": "/galerie/reseau/reseau-2.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Câblage d'une baie informatique",
     "date": "2026",
     "w": 1080,
     "h": 810
@@ -153,9 +155,9 @@
   {
     "id": 16,
     "type": "image",
-    "src": "/galerie/fibre/fibre-11.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "src": "/galerie/reseau/reseau-3.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Brassage réseau Cat 6",
     "date": "2026",
     "w": 810,
     "h": 1080
@@ -163,9 +165,9 @@
   {
     "id": 17,
     "type": "image",
-    "src": "/galerie/fibre/fibre-12.webp",
+    "src": "/galerie/fibre/fibre-1.webp",
     "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "titre": "L'équipe EMS GABON sur le chantier",
     "date": "2026",
     "w": 1080,
     "h": 810
@@ -173,9 +175,9 @@
   {
     "id": 18,
     "type": "image",
-    "src": "/galerie/fibre/fibre-13.webp",
+    "src": "/galerie/fibre/fibre-2.webp",
     "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "titre": "Repérage avant pré-câblage",
     "date": "2026",
     "w": 1080,
     "h": 810
@@ -183,9 +185,9 @@
   {
     "id": 19,
     "type": "image",
-    "src": "/galerie/fibre/fibre-14.webp",
+    "src": "/galerie/fibre/fibre-3.webp",
     "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
+    "titre": "Pose de fourreaux télécom",
     "date": "2026",
     "w": 810,
     "h": 1080
@@ -193,49 +195,49 @@
   {
     "id": 20,
     "type": "image",
-    "src": "/galerie/fibre/fibre-15.webp",
+    "src": "/galerie/fibre/fibre-4.webp",
     "categorie": "Fibre Optique",
-    "titre": "Chantier fibre optique",
-    "date": "2026",
-    "w": 742,
-    "h": 1080
-  },
-  {
-    "id": 21,
-    "type": "image",
-    "src": "/galerie/reseau/reseau-1.webp",
-    "categorie": "Réseau & Serveurs",
-    "titre": "Réseau & serveurs",
-    "date": "2026",
-    "w": 810,
-    "h": 1080
-  },
-  {
-    "id": 22,
-    "type": "image",
-    "src": "/galerie/reseau/reseau-2.webp",
-    "categorie": "Réseau & Serveurs",
-    "titre": "Réseau & serveurs",
+    "titre": "Travaux sur site — lotissement",
     "date": "2026",
     "w": 1080,
     "h": 810
   },
   {
-    "id": 23,
+    "id": 21,
     "type": "image",
-    "src": "/galerie/reseau/reseau-3.webp",
-    "categorie": "Réseau & Serveurs",
-    "titre": "Réseau & serveurs",
+    "src": "/galerie/fibre/fibre-5.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Pré-câblage d'une villa",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 22,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-6.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Superviseur de chantier",
     "date": "2026",
     "w": 810,
     "h": 1080
   },
   {
+    "id": 23,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-7.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Inspection de la tranchée",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
     "id": 24,
     "type": "image",
-    "src": "/galerie/portail-automatique/portail-1.webp",
-    "categorie": "Portail Automatique",
-    "titre": "Portail automatique",
+    "src": "/galerie/fibre/fibre-8.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Pose des fourreaux en tranchée",
     "date": "2026",
     "w": 1080,
     "h": 810
@@ -243,9 +245,9 @@
   {
     "id": 25,
     "type": "image",
-    "src": "/galerie/portail-automatique/portail-2.webp",
-    "categorie": "Portail Automatique",
-    "titre": "Portail automatique",
+    "src": "/galerie/fibre/fibre-9.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Ouverture de tranchée — lotissement",
     "date": "2026",
     "w": 1080,
     "h": 810
@@ -253,11 +255,61 @@
   {
     "id": 26,
     "type": "image",
-    "src": "/galerie/portail-automatique/portail-3.webp",
-    "categorie": "Portail Automatique",
-    "titre": "Portail automatique",
+    "src": "/galerie/fibre/fibre-10.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Livraison des fourreaux sur site",
     "date": "2026",
     "w": 1080,
     "h": 810
+  },
+  {
+    "id": 27,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-11.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Acheminement des gaines",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 28,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-12.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Le site à raccorder",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 29,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-13.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Équipe EMS GABON en intervention",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 30,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-14.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Équipe mobile EMS GABON",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 31,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-15.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chef d'équipe sur site",
+    "date": "2026",
+    "w": 742,
+    "h": 1080
   }
 ]
