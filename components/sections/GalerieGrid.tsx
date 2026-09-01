@@ -26,6 +26,7 @@ const CATEGORIES = [
   "Vidéosurveillance",
   "Contrôle d'Accès",
   "Réseau & Serveurs",
+  "Portail Automatique",
 ];
 
 function aspectOf(item: GalerieItem) {
