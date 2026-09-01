@@ -1,27 +1,263 @@
 [
   {
     "id": 1,
-    "type": "image",
-    "src": "/galerie/fibre/exemple-tirage-01.webp",
-    "categorie": "Fibre Optique",
-    "titre": "Tirage fourreaux - Akanda",
-    "date": "2025-08-30"
+    "type": "video",
+    "src": "/galerie/videos/MANGOUBA.mp4",
+    "poster": "/galerie/posters/mangouba.webp",
+    "categorie": "Chantier",
+    "titre": "Chantier MANGOUBA",
+    "date": "2026",
+    "w": 1280,
+    "h": 720
   },
   {
     "id": 2,
     "type": "image",
-    "src": "/galerie/videosurveillance/exemple-camera-01.webp",
+    "src": "/galerie/videosurveillance/videosurveillance-1.webp",
     "categorie": "Vidéosurveillance",
-    "titre": "Pose caméras - CHU Owendo",
-    "date": "2025-08-30"
+    "titre": "Installation vidéosurveillance",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
   },
   {
     "id": 3,
-    "type": "video",
-    "src": "/galerie/videos/exemple-chantier.mp4",
-    "poster": "/galerie/posters/exemple-chantier.webp",
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-2.webp",
     "categorie": "Vidéosurveillance",
-    "titre": "Installation en cours - 25s",
-    "date": "2025-08-29"
+    "titre": "Installation vidéosurveillance",
+    "date": "2026",
+    "w": 1080,
+    "h": 792
+  },
+  {
+    "id": 4,
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-3.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Installation vidéosurveillance",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 5,
+    "type": "image",
+    "src": "/galerie/videosurveillance/videosurveillance-4.webp",
+    "categorie": "Vidéosurveillance",
+    "titre": "Vidéosurveillance — C.H.U d'Owendo",
+    "date": "2026",
+    "w": 1080,
+    "h": 412
+  },
+  {
+    "id": 6,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-1.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 7,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-2.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 8,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-3.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 9,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-4.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 10,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-5.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 11,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-6.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 12,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-7.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 13,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-8.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 14,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-9.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 15,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-10.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 16,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-11.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 17,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-12.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 18,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-13.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 19,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-14.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 20,
+    "type": "image",
+    "src": "/galerie/fibre/fibre-15.webp",
+    "categorie": "Fibre Optique",
+    "titre": "Chantier fibre optique",
+    "date": "2026",
+    "w": 742,
+    "h": 1080
+  },
+  {
+    "id": 21,
+    "type": "image",
+    "src": "/galerie/reseau/reseau-1.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Réseau & serveurs",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 22,
+    "type": "image",
+    "src": "/galerie/reseau/reseau-2.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Réseau & serveurs",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 23,
+    "type": "image",
+    "src": "/galerie/reseau/reseau-3.webp",
+    "categorie": "Réseau & Serveurs",
+    "titre": "Réseau & serveurs",
+    "date": "2026",
+    "w": 810,
+    "h": 1080
+  },
+  {
+    "id": 24,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-1.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Portail automatique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 25,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-2.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Portail automatique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
+  },
+  {
+    "id": 26,
+    "type": "image",
+    "src": "/galerie/portail-automatique/portail-3.webp",
+    "categorie": "Portail Automatique",
+    "titre": "Portail automatique",
+    "date": "2026",
+    "w": 1080,
+    "h": 810
   }
 ]
