@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "galerie:webp": "node scripts/convert-galerie.mjs"
   },
   "dependencies": {
     "framer-motion": "^13.1.1",
