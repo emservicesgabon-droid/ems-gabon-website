@@ -6,8 +6,8 @@ export function OrganizationJsonLd() {
     description:
       "Entreprise informatique gabonaise proposant des services IT complets : maintenance, réseaux, Sage 100, sécurité, fibre optique, formation.",
     url: "https://ems-gabon.com",
-    email: "ems@emsgabon.com",
-    telephone: "+241011454973",
+    email: "contact@emsgabon.com",
+    telephone: "+24162506571",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Libreville",

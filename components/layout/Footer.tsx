@@ -34,7 +34,7 @@ export function Footer() {
             {/* Social */}
             <div className="flex gap-3">
               <a
-                href="https://wa.me/241011454973"
+                href="https://wa.me/24177063434"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -43,14 +43,14 @@ export function Footer() {
                 <MessageSquare size={16} />
               </a>
               <a
-                href="mailto:ems@emsgabon.com"
+                href="mailto:contact@emsgabon.com"
                 aria-label="Email"
                 className="footer-social-icon"
               >
                 <Mail size={16} />
               </a>
               <a
-                href="tel:+241011454973"
+                href="tel:+24162506571"
                 aria-label="Téléphone"
                 className="footer-social-icon"
               >
@@ -115,13 +115,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={15} className="flex-shrink-0" style={{ color: "#f5a623" }} />
-                <a href="tel:+241011454973" className="text-sm text-white/65 hover:text-[#f5a623] transition-colors">
+                <a href="tel:+24162506571" className="text-sm text-white/65 hover:text-[#f5a623] transition-colors">
                   {t("contact.phone_value")}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={15} className="flex-shrink-0" style={{ color: "#f5a623" }} />
-                <a href="mailto:ems@emsgabon.com" className="text-sm text-white/65 hover:text-[#f5a623] transition-colors break-all">
+                <a href="mailto:contact@emsgabon.com" className="text-sm text-white/65 hover:text-[#f5a623] transition-colors break-all">
                   {t("contact.email_value")}
                 </a>
               </li>

@@ -28,7 +28,7 @@ export default async function ConfidentialitePage({ params }: Props) {
 
           <div>
             <h2 className="text-xl font-bold text-text-heading mb-3">1. Responsable du traitement</h2>
-            <p className="text-sm">Le responsable du traitement des données est <strong>EMS GABON</strong>, dont le siège est situé à Libreville, Gabon. Contact : <a href="mailto:ems@emsgabon.com" className="text-[#00d4ff] underline">ems@emsgabon.com</a></p>
+            <p className="text-sm">Le responsable du traitement des données est <strong>EMS GABON</strong>, dont le siège est situé à Libreville, Gabon. Contact : <a href="mailto:contact@emsgabon.com" className="text-[#00d4ff] underline">contact@emsgabon.com</a></p>
           </div>
 
           <div>
@@ -77,7 +77,7 @@ export default async function ConfidentialitePage({ params }: Props) {
               <li>Droit à l'effacement (droit à l'oubli)</li>
               <li>Droit d'opposition au traitement</li>
             </ul>
-            <p className="text-sm mt-2">Pour exercer ces droits, contactez-nous à : <a href="mailto:ems@emsgabon.com" className="text-[#00d4ff] underline">ems@emsgabon.com</a></p>
+            <p className="text-sm mt-2">Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@emsgabon.com" className="text-[#00d4ff] underline">contact@emsgabon.com</a></p>
           </div>
 
           <div>
@@ -87,7 +87,7 @@ export default async function ConfidentialitePage({ params }: Props) {
 
           <div>
             <h2 className="text-xl font-bold text-text-heading mb-3">9. Contact</h2>
-            <p className="text-sm">Pour toute question relative à cette politique, contactez-nous à : <a href="mailto:ems@emsgabon.com" className="text-[#00d4ff] underline">ems@emsgabon.com</a> ou par téléphone au <a href="tel:+241011454973" className="text-[#00d4ff] underline">+241 011 45 49 73</a>.</p>
+            <p className="text-sm">Pour toute question relative à cette politique, contactez-nous à : <a href="mailto:contact@emsgabon.com" className="text-[#00d4ff] underline">contact@emsgabon.com</a> ou par téléphone au <a href="tel:+24162506571" className="text-[#00d4ff] underline">+241 (0) 62 50 65 71</a>.</p>
           </div>
 
         </div>

@@ -110,14 +110,14 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           </Link>
           <div className="flex gap-3">
             <a
-              href="tel:+241011454973"
+              href="tel:+24162506571"
               className="flex-1 flex items-center justify-center gap-1.5 text-sm text-white/70 border border-white/15 rounded-lg py-2.5 hover:bg-white/10 transition-colors"
             >
               <Phone size={14} />
               {t("common.call")}
             </a>
             <a
-              href="https://wa.me/241011454973"
+              href="https://wa.me/24177063434"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-1.5 text-sm text-green-400 border border-white/15 rounded-lg py-2.5 hover:bg-green-500/10 transition-colors"

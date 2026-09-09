@@ -33,8 +33,8 @@ export default async function MentionsLegalesPage({ params }: Props) {
               <li><strong>Raison sociale :</strong> EMS GABON</li>
               <li><strong>Forme juridique :</strong> Entreprise individuelle / SARL</li>
               <li><strong>Siège social :</strong> Libreville, Gabon</li>
-              <li><strong>Email :</strong> ems@emsgabon.com</li>
-              <li><strong>Téléphone :</strong> +241 011 45 49 73</li>
+              <li><strong>Email :</strong> contact@emsgabon.com</li>
+              <li><strong>Téléphone :</strong> +241 (0) 62 50 65 71</li>
             </ul>
           </div>
 
@@ -65,7 +65,7 @@ export default async function MentionsLegalesPage({ params }: Props) {
 
           <div>
             <h2 className="text-xl font-bold text-text-heading mb-3">7. Contact</h2>
-            <p className="text-sm">Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à : <a href="mailto:ems@emsgabon.com" className="text-[#00d4ff] underline">ems@emsgabon.com</a></p>
+            <p className="text-sm">Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à : <a href="mailto:contact@emsgabon.com" className="text-[#00d4ff] underline">contact@emsgabon.com</a></p>
           </div>
 
         </div>

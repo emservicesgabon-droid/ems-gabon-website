@@ -47,7 +47,7 @@ export function CTABanner({
             <ArrowRight size={16} />
           </Link>
           <a
-            href="tel:+241011454973"
+            href="tel:+24162506571"
             className="inline-flex items-center gap-2 border-2 border-white/40 text-white font-semibold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors"
           >
             <Phone size={16} />

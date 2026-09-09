@@ -177,12 +177,12 @@ export function Header() {
             {/* Right Actions */}
             <div className="flex items-center gap-2 flex-shrink-0">
               <a
-                href="tel:+241011454973"
+                href="tel:+24162506571"
                 className="hidden md:flex items-center gap-1.5 text-sm text-white/60 hover:text-[#f5a623] transition-colors px-2 py-1.5"
                 aria-label="Appeler EMS GABON"
               >
                 <Phone size={14} />
-                <span className="hidden xl:inline">+241 011 45 49 73</span>
+                <span className="hidden xl:inline">+241 (0) 62 50 65 71</span>
               </a>
 
               <div className="hidden lg:block">

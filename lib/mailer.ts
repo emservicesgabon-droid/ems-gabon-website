@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const TO = process.env.SMTP_TO ?? "ems@emsgabon.com";
+const TO = process.env.SMTP_TO ?? "contact@emsgabon.com";
 const FROM = `"EMS GABON" <${process.env.SMTP_USER ?? "ems@emsgabon.com"}>`;
 
 export async function sendContactEmail(data: {
