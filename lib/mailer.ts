@@ -1,21 +1,27 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-const SMTP_PORT = Number(process.env.SMTP_PORT ?? 465);
+// Destinataire des notifications (arrive dans la boite Zoho, alias de ems@).
+const TO = process.env.MAIL_TO ?? "contact@emsgabon.com";
+// Expediteur : doit etre une adresse du domaine VERIFIE dans Resend.
+const FROM = process.env.MAIL_FROM ?? "EMS GABON <noreply@emsgabon.com>";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST ?? "smtp.zoho.com",
-  port: SMTP_PORT,
-  secure: SMTP_PORT === 465, // SSL sur 465, STARTTLS sur 587
-  requireTLS: SMTP_PORT !== 465, // impose STARTTLS hors 465 : jamais d'identifiants en clair
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: (process.env.SMTP_PASS ?? "").replace(/\s/g, ""),
-  },
-  tls: { minVersion: "TLSv1.2", rejectUnauthorized: true },
-});
-
-const TO = process.env.SMTP_TO ?? "contact@emsgabon.com";
-const FROM = `"EMS GABON" <${process.env.SMTP_USER ?? "ems@emsgabon.com"}>`;
+async function sendMail(opts: { subject: string; html: string; replyTo: string }) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    throw new Error("RESEND_API_KEY manquante — a configurer dans les variables Vercel.");
+  }
+  const resend = new Resend(apiKey);
+  const { error } = await resend.emails.send({
+    from: FROM,
+    to: TO,
+    replyTo: opts.replyTo,
+    subject: opts.subject,
+    html: opts.html,
+  });
+  if (error) {
+    throw new Error(`${error.name}: ${error.message}`);
+  }
+}
 
 export async function sendContactEmail(data: {
   name: string;
@@ -25,9 +31,7 @@ export async function sendContactEmail(data: {
   service: string;
   message: string;
 }) {
-  await transporter.sendMail({
-    from: FROM,
-    to: TO,
+  await sendMail({
     replyTo: data.email,
     subject: `[Contact] ${data.name} — ${data.service}`,
     html: `
@@ -54,9 +58,7 @@ export async function sendDevisEmail(data: {
   budget?: string;
   urgency: string;
 }) {
-  await transporter.sendMail({
-    from: FROM,
-    to: TO,
+  await sendMail({
     replyTo: data.email,
     subject: `[Devis] ${data.name} — ${data.service}`,
     html: `
@@ -84,9 +86,7 @@ export async function sendRdvEmail(data: {
   time: string;
   notes?: string;
 }) {
-  await transporter.sendMail({
-    from: FROM,
-    to: TO,
+  await sendMail({
     replyTo: data.email,
     subject: `[RDV] ${data.name} — ${data.date} à ${data.time}`,
     html: `
