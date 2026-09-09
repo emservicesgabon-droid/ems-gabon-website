@@ -1,9 +1,11 @@
 import nodemailer from "nodemailer";
 
+const SMTP_PORT = Number(process.env.SMTP_PORT ?? 465);
+
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  host: process.env.SMTP_HOST ?? "smtp.zoho.com",
+  port: SMTP_PORT,
+  secure: SMTP_PORT === 465, // SSL sur 465, STARTTLS sur 587
   auth: {
     user: process.env.SMTP_USER,
     pass: (process.env.SMTP_PASS ?? "").replace(/\s/g, ""),
