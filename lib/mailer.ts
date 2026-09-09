@@ -6,10 +6,12 @@ const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST ?? "smtp.zoho.com",
   port: SMTP_PORT,
   secure: SMTP_PORT === 465, // SSL sur 465, STARTTLS sur 587
+  requireTLS: SMTP_PORT !== 465, // impose STARTTLS hors 465 : jamais d'identifiants en clair
   auth: {
     user: process.env.SMTP_USER,
     pass: (process.env.SMTP_PASS ?? "").replace(/\s/g, ""),
   },
+  tls: { minVersion: "TLSv1.2", rejectUnauthorized: true },
 });
 
 const TO = process.env.SMTP_TO ?? "contact@emsgabon.com";
