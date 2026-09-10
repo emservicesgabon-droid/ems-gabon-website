@@ -2,8 +2,9 @@ import { Resend } from "resend";
 
 // Destinataire des notifications (arrive dans la boite Zoho, alias de ems@).
 const TO = process.env.MAIL_TO ?? "contact@emsgabon.com";
-// Expediteur : doit etre une adresse du domaine VERIFIE dans Resend.
-const FROM = process.env.MAIL_FROM ?? "EMS GABON <noreply@emsgabon.com>";
+// Expediteur : doit etre une adresse du (sous-)domaine VERIFIE dans Resend.
+// Ici le domaine verifie est le sous-domaine no-reply.emsgabon.com.
+const FROM = process.env.MAIL_FROM ?? "EMS GABON <noreply@no-reply.emsgabon.com>";
 
 async function sendMail(opts: { subject: string; html: string; replyTo: string }) {
   const apiKey = process.env.RESEND_API_KEY;
